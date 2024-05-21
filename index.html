@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/28dac81389.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alata&family=Cedarville+Cursive&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Binta Bulama</title>
+</head>
+
+<body class="scroll-smooth">
+   <!-- Nav Bar -->
+   <header class="sticky top-0 z-50" id="nav">
+    <nav class="flex items-center md:px-24 px-4 bg-zinc-800 py-4 justify-between font-bold text-white" id="nav">
+      <a href="#hero"><img class="w-24" src="images/TMM.svg" alt=""></a>
+      <div class="hidden h-10 font-alata md:flex md:space-x-8">
+        <div class="group">
+            <a href="index.html">Home</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+        <div class="group">
+          <a href="about.html">About</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="unlock.html">Resources</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="library.html">Library</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+        <div class="group">
+          <a href="#contact">Contact</a>
+          <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+        </div>
+      </div>
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="menu"
+      class="absolute top-0  left-0 hidden gap-12 flex-col self-end w-full min-h-screen pt-40 pl-12 space-y-3 text-lg text-yellow-500 uppercase bg-zinc-800">
+      <a href="index.html" class="hover:text-yellow-800">Home</a>
+      <a href="about.html" class="hover:text-yellow-800">About</a>
+      <a href="unlock.html" class="hover:text-yellow-800">Resources</a>
+      <a href="library.html" class="hover:text-yellow-800">Library</a>
+      <a href="#contact" class="hover:text-yellow-800">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="md:px-24 px-4">
+    <div class="flex justify-center pt-20 md:pt-14 pb-10 ">
+      <h2
+        class="text-gray-200 text-center mb-6 max-w-6xl text-5xl font-light leading-snug tracking-tight  sm:text-7xl sm:leading-snug">
+        Hi, it's <span class="px-4 font-bold  text-yellow-500">Binta Bulama</span>
+      </h2>
+    </div>
+    <div class="flex justify-between">
+      <div class="flex justify-start pt-8">
+        <img class=" h-64 w-5 " src="images/arrow.png" alt="">
+      </div>
+
+
+
+      <div class="flex justify-end pt-8">
+        <div class="gap-6 lg:gap-8 flex flex-col text-yellow-500">
+          <a href=""><i class="fa-brands fa-x-twitter text-xs hover:text-gray-100"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-f text-xs hover:text-gray-100"></i></a>
+          <a href=""><i class="fa-brands fa-instagram text-xs hover:text-gray-100"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok text-xs hover:text-gray-100"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in text-xs hover:text-gray-100"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="flex justify-center pt-20 md:pt-14 pb-10 ">
+          <h2
+            class=" text-yellow-400 text-center mb-6 max-w-6xl text-5xl font-light leading-snug tracking-tight  sm:text-7xl sm:leading-snug">
+            Reach Beyond and <span class="border-b-8 border-gray-100 px-4 font-bold">achieve</span>
+          </h2>
+        </div> -->
+
+    <!-- <div class="flex items-center justify-center pt-10">
+          <span class="font-bold text-4xl md:text-6xl text-center items-center justify-center flex text-transparent bg-gradient-to-br bg-clip-text from-yellow-500 via-red-500 to-zinc-500 ">
+            Focus, Achieve, Become Valuable
+        </span>
+        </div> -->
+
+    <div class="flex items-center justify-center">
+      <ul class="text-gray-50 text-center pb-5 font-thin text-xl md:px-36 ">
+        <li>
+          I am a renowned Life Coach and a Public Speaker.
+        </li>
+        <br>
+        <li>
+          <span class="font-medium">I am the trusted guide individuals, especially women,
+            turn to</span> when they are ready to unlock their full potential and
+          create a life of purpose, freedom, and prosperity.
+        </li>
+        <br>
+      </ul>
+    </div>
+    <a href="about.html">
+      <div class="text-center flex justify-center items-center  pb-16 cursor-pointer">
+        <button
+          class=" px-10 py-3 text-lg  text-zinc-800 bg-yellow-500 hover:bg-yellow-700 hover:text-white duration-500">
+          Meet Binta
+        </button>
+      </div>
+    </a>
+    </div>
+  </section>
+
+
+
+
+  <!-- Quiz -->
+  <section class="bg-gray-200 relative overflow-hidden">
+    <div class="pt-16">
+      <div class="md:px-48">
+        <h1 class="flex items-center justify-center text-center font-thin uppercase text-2xl md:text-4xl">R E S O U R C
+          E S</h1>
+        <h2 class="pt-2 pb-6 text-5xl md:text-6xl font-bold flex items-center justify-center text-center">Join the New
+          <span
+            class="text-transparent bg-gradient-to-br bg-clip-text from-yellow-500 via-red-500 to-zinc-500 ml-4">1%</span>
+        </h2>
+        <p class="mx-auto px-4 flex items-center justify-center text-center font-light text-gray-700 text-lg">
+          If you are tired of feeling stuck, undervalued, rejected
+          and unfulfilled as a woman, I have good news for you.</p>
+        <br>
+        <p class="mx-auto px-4 flex items-center justify-center text-center font-medium text-gray-700 text-lg">
+          “Unlock your worth: Become a woman of unshakeable value with proven time-tested
+          strategies and easy to follow formulas for building unstoppable confidence, unwavering
+          purpose and unapologetic self worth!</p>
+        <br>
+
+      </div>
+      <div class="flex items-center justify-center relative z-10">
+        <h1 class=" text-center font-normal uppercase text-sm text-yellow-500 pt-10">click to unlock</h1>
+      </div>
+      <div class="flex items-center justify-center relative">
+        <div class="absolute top-0 h-32 border-l border-yellow-500"></div>
+      </div>
+    </div>
+    <!-- Curvy end -->
+    <div class="absolute bottom-0 left-0 right-0 h-36">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="block w-full h-full">
+        <path d="M0,100 C30,100 70,0 100,100 L100,100 L0,100 Z" fill="white"></path>
+      </svg>
+    </div>
+    <div class="relative">
+      <div class="flex items-center justify-center px-16 animate-pulse">
+        <div
+          class="w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000">
+        </div>
+        <div
+          class="absolute w-36 h-36 effect flex justify-center items-center rounded-full app-color-gray hover:scale-110 duration-200">
+          <a href="unlock.html"><i
+              class="fa-solid fa-play text-transparent bg-gradient-to-br bg-clip-text from-yellow-500 via-red-500 to-zinc-500 text-5xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="mx-auto px-4 flex items-center justify-center text-center font-light text-gray-700 text-lg pb-24">
+      Unlock your magnetic feminine power: Say goodbye to self-doubt,
+      dream partner, meaningful friendships and endless opportunities with
+      insecurity and unfulfilling relationships and say hello to attracting your
+      effortless ease and confidence!</p>
+  </section>
+
+
+
+  <!-- Ebooks -->
+  <section class=" md:px-24">
+    <div class="flex flex-col items-center flex-1 py-16">
+      <h1 class="text-center font-thin uppercase text-2xl md:text-4xl">L I B R A R Y</h1>
+      <div class="flex flex-col md:flex-row justify-between items-center md:gap-32">
+        <div class="mx-auto md:mx-0  w-full md:w-fit px-4 order-2 md:order-1">
+          <img class="w-full md:w-auto" src="images/mission.webp" alt="Mission">
+        </div>
+        <div class="mx-auto py-10 px-4 md:w-fit order-1 md:order-2">
+          <h2
+            class="mb-6 max-w-6xl md:text-7xl font-light leading-snug tracking-tight text-center md:text-left text-4xl sm:leading-snug capitalize">
+            Get with the
+            <span class=" inline-block border-b-8 border-yellow-500 px-4 font-bold">program</span>
+          </h2>
+          <h1 class=" mx-auto text-xl text-center md:text-left text-gray-700">
+            Redefine and reinvent yourself with my E-books and videos</h1>
+          <br>
+          <p class="md:text-center font-light text-lg text-gray-800">
+            Many women struggle to find their place in the world and build meaningful relationships despite
+            longing for success and purpose. They face repeated roadblocks that prevent them from realizing
+            their full potential.
+          </p>
+          <br>
+          <p class="md:text-center font-light text-lg text-gray-800">
+            To address these challenges, I've developed a new product designed to help women overcome
+            obstacles and unlock their full potential. This product provides the tools and support
+            needed to build a life of purpose, success, and fulfilling relationships that reflect
+            their true worth and value.
+          </p>
+          <br>
+
+          <a href="library.html">
+            <div class="flex justify-center md:justify-end">
+              <button
+                class=" px-10 py-3 text-lg  text-zinc-800 bg-yellow-500 hover:bg-yellow-700 hover:text-white duration-500">
+                Explore Library
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <section class="bg-zinc-700 relative overflow-hidden">
+  <div class="py-16">
+    <div class="flex items-center justify-center py-6 md:py-14">
+      <img class="h-11" src="images/TMM.svg" alt="">
+    </div>
+  </div>
+  
+  </section> -->
+
+
+
+
+
+
+  <!-- Testimonials -->
+  <section class="bg-gray-200 pb-10">
+    <h1 class="flex items-center justify-center text-center font-thin uppercase text-2xl md:text-4xl pt-16 pb-10">T E S
+      T I M O N I A L S</h1>
+    <div class="testimonial-container mx-auto max-w-7xl px-4 md:px-24 md:p-10 ">
+      <div class="gap-6 flex flex-col">
+
+        <!-- Box 1 -->
+        <div class="box relative p-10 rounded-xl bg-red-400 md:col-span-2" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <div class="flex z-20 space-x-4">
+            <img class="w-10 h-10 rounded-full ring-2 ring-yellow-600" src="images/image-jonathan.jpg" alt="">
+            <div class="text-sm text-gray-50">
+              <h4 class="opacity-90">John Adewale</h4>
+              <p class="opacity-70">Business Owner</p>
+            </div>
+          </div>
+          <!-- Large Text -->
+          <p class="relative z-10 mt-6 text-gray-50">
+            Meeting her and starting her coaching sessions significantly
+            improved my skills.
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-70  text-gray-50 pb-8">
+            Hello Binta, this E-book has been a game changer for me. I finally feel like I am worthy of love and
+            respect.
+            Thank you for helping me. You don't know the impact you have made in my life.
+          </p>
+
+          <div class="progress-bar h-1"></div>
+        </div>
+
+
+        <!-- Box 2 -->
+        <div class="box relative p-10 rounded-xl bg-gray-600" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <!-- Box Header -->
+          <div class="flex space-x-4">
+            <img src="images/precious.jpeg" alt="" class="w-10 h-10 rounded-full ring-2 ring-yellow-600">
+            <div class="text-sm text-gray-50">
+              <h4 class="opacity-90">Precious Akiru</h4>
+              <p class="opacity-50">Verified Client</p>
+            </div>
+          </div>
+
+          <!-- Large Text -->
+          <p class="mt-6  text-gray-50">
+            She was very supportive and kept me motivated
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-50 line-clamp-5 text-gray-50 pb-8">
+            I've been so depressed. Your post came at the right time even though I was hesistant at first, I am glad I
+            did it
+            anyway. Thank you so much. I am now in a better place at life.
+          </p>
+          <div class="progress-bar h-1"></div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box relative  p-10 rounded-xl bg-gray-300 shadow-lg" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <!-- Box Header -->
+          <div class="flex space-x-4">
+            <img src="images/chinedu.jpeg" alt="" class="w-10 h-10 rounded-full ring-2 ring-yellow-600">
+            <div class="text-sm">
+              <h4 class="opacity-90">Chinedu Isoh</h4>
+              <p class="opacity-50">Verified Client</p>
+            </div>
+          </div>
+
+          <!-- Large Text -->
+          <p class="mt-6">
+            She changed my mindset.
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-50 line-clamp-5 pb-8">
+            Good evening ma'am. If I may ask, how did you manage to be so full of wisdom?
+            I strongly admire your self-esteem as well.
+          </p>
+          <div class="progress-bar h-1"></div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box relative p-10 rounded-xl bg-yellow-600" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <!-- Box Header -->
+          <div class="flex space-x-4">
+            <img src="images/shola.jpeg" alt="" class="w-10 h-10 rounded-full ring-2 ring-gray-200">
+            <div class="text-sm text-gray-50">
+              <h4 class="opacity-90">Shola Walters</h4>
+              <p class="opacity-50">Verified Client</p>
+            </div>
+          </div>
+
+          <!-- Large Text -->
+          <p class="mt-6  text-gray-50">
+            She brought about positive changes in various aspects of my life.
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-50 line-clamp-5 text-gray-50 pb-8">
+            You've completely changed my life for good. How do I express my gratitude? Can I at leadt buy you airtime.
+            I am now ready to become a valuable woman because aI have suffered enough
+          </p>
+          <div class="progress-bar h-1"></div>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box relative p-10 rounded-xl bg-gray-900" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <!-- Box Header -->
+          <div class="flex space-x-4">
+            <img src="images/vera.jpeg" alt="" class="w-10 h-10 rounded-full ring-2 ring-yellow-600">
+            <div class="text-sm text-gray-50">
+              <h4 class="opacity-90">Vera Naza</h4>
+              <p class="opacity-50">Verified Client</p>
+            </div>
+          </div>
+
+          <!-- Large Text -->
+          <p class="mt-6  text-gray-200">
+            She helped me go through some tough times.
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-50 line-clamp-5 text-gray-50 pb-8">
+            Thank you Miss Binta. This was very helpful. I will keep on praying to God to bless you.
+            Honestly, we should be paying you for consultation because you are so full of wisdom.
+          </p>
+          <div class="progress-bar h-1"></div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box relative p-10 rounded-xl bg-zinc-700 md:col-span-2" style="display: none;">
+          <img class="h-12 absolute top-3 right-10 scale-125 md:top-7 md:right-24 md:scale-150 opacity-80"
+            src="images/bg-pattern-quotation.svg" alt="">
+          <!-- Box Header -->
+          <div class="flex space-x-4">
+            <img src="images/taiwo.jpg" alt="" class="w-10 h-10 rounded-full ring-2 ring-yellow-600">
+            <div class="text-sm text-gray-200">
+              <h4 class="opacity-90">Taiwo Onikoyi</h4>
+              <p class="opacity-50">Verified Client</p>
+            </div>
+          </div>
+
+          <!-- Large Text -->
+          <p class="mt-6 text-gray-200">
+            She's very authentic and was patient with me.
+          </p>
+
+          <!-- Small Text -->
+          <p class="mt-6 opacity-50 line-clamp-5 text-gray-200 pb-8">
+            I am an experienced and passionate writer. Well I started this after I got inspired by some posts on your
+            personal page
+            I had to learn hot to write and right now, I do so many things myself.
+          </p>
+          <div class="progress-bar h-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section class="services bg-yellow-600 py-5 px-4 md:px-24 relative" id="contact">
+    <div class="sticky">
+      <img class="absolute -z-40" src="images/Ph 5.JPG" alt="">
+    </div>
+    <div class="md:px-48 pt-10">
+      <h1 class="flex items-center justify-center text-center font-thin uppercase text-2xl md:text-4xl text-gray-100">C
+        O N T A C T</h1>
+    </div>
+    <h2
+      class="pt-2 pb-3 max-w-6xl text-4xl md:text-6xl font-bold flex items-center justify-center text-center text-gray-100">
+      Connect with
+      <span
+        class="text-transparent bg-gradient-to-br bg-clip-text from-yellow-500 via-red-500 to-zinc-500 ml-4">Binta</span>
+    </h2>
+    <p class="mx-auto flex items-center justify-center text-center font-normal text-gray-100 md:text-2xl">
+      Looking forward to hearing from you!
+    </p>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10 mx-auto">
+      <div class="">
+        <p class="mt-2 text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
+        <p class="mt-2 text-blue-500 dark:text-blue-400">hello@themoneymagnetafrica.com</p>
+        <div class="text-center flex justify-center items-center pt-8 pb-16">
+          <button
+            class="border-[1px] border-gray-100 bg-transparent text-gray-100 py-3 px-10 rounded-none hover:border-yellow-800 hover:bg-yellow-700 hover:scale-110 duration-200">
+            Send and Email
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- icons Container -->
+    <div class="flex items-center justify-center mx-auto space-x-4  md:mx-0">
+      <div class="gap-4 lg:gap-8 mt-14 mb-3 flex text-gray-200">
+        <a href=""><i
+            class="fa-brands fa-x-twitter text-lg group hover:text-yellow-500 hover:scale-110 duration-200"></i></a>
+        <a href=""><i
+            class="fa-brands fa-facebook-f text-lg group hover:text-yellow-500 hover:scale-110 duration-200"></i></a>
+        <a href=""><i
+            class="fa-brands fa-instagram text-lg group hover:text-yellow-500 hover:scale-110 duration-200"></i></a>
+        <a href=""><i
+            class="fa-brands fa-tiktok text-lg group hover:text-yellow-500 hover:scale-110 duration-200"></i></a>
+        <a href=""><i
+            class="fa-brands fa-linkedin-in text-lg group hover:text-yellow-500 hover:scale-110 duration-200"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Say Something -->
+  <section class="bg-gray-100">
+    <div class="flex items-center justify-center py-14 ">
+      <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+        <div class="flex flex-col md:flex-row rounded-l-xl">
+          <!-- Image -->
+          <img src="images/new-life.jpg" alt=""
+            class="object-fit rounded-xl h-64 md:h-64 md:w-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200" />
+          <!-- Content -->
+          <div class="p-6 md:p-12">
+            <h2 class=" text-xl font-medium text-center text-white md:text-left">
+              Take Charge of your life now!
+            </h2>
+
+            <p class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left">
+              Empower yourself to shape your destiny. Join thousands of subscribers today.
+            </p>
+
+            <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+              <input type="text" placeholder="Enter your email address"
+                class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none" />
+
+              <button
+                class="px-5 py-3 text-xs  text-zinc-800 bg-yellow-500 hover:bg-yellow-700 hover:text-white duration-500">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <section>
+    <footer class="bg-zinc-800">
+      <!-- Container -->
+      <div class="container max-w-6xl py-14 mx-auto">
+        <!-- Footer Flex Container -->
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+          <!-- Menu & Logo Container -->
+          <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+            <!-- Logo -->
+            <div class="h-8">
+              <img src="images/tmm.svg" alt="" class="w-44 md:ml-3" />
+            </div>
+            <!-- Menu Container -->
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3 pt-14">
+              <!-- Item 1 -->
+              <div class="h-10 group">
+                <a href="#">About</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <!-- Item 2 -->
+              <div class="h-10 group">
+                <a href="#">Careers</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <!-- Item 3 -->
+              <div class="h-10 group">
+                <a href="#">Events</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <!-- Item 4 -->
+              <div class="h-10 group">
+                <a href="#">Products</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+              <!-- Item 5 -->
+              <div class="h-10 group">
+                <a href="#">Support</a>
+                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social & Copy Container -->
+          <div class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+            <!-- icons Container -->
+            <div class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0">
+              <div class="gap-4 lg:gap-8 mt-14 mb-3 flex text-white">
+                <a href=""><i class="fa-brands fa-x-twitter text-xs group"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f text-xs group"></i></a>
+                <a href=""><i class="fa-brands fa-instagram text-xs group"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok text-xs group"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in text-xs group"></i></a>
+              </div>
+            </div>
+
+            <!-- Copy -->
+            <div class="font-light text-yellow-400">
+              &copy; 2024 The Money Magnet Africa. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>
